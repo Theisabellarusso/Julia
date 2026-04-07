@@ -35,5 +35,3 @@ function average_per_day(week1, week2)
     (week1 .+ week2) ./ 2
     
 end
-
-

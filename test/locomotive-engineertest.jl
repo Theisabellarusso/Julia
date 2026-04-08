@@ -1,6 +1,8 @@
+using Exercism
+
 using Test 
 
-include("locomotive-engineer.jl")
+include(pkgdir(Exercism, "src", "locomotive-engineer.jl"))
 
 @testset verbose = true "tests" begin
     @testset "1. test_get_vector_of_wagons" begin

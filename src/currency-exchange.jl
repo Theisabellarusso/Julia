@@ -1,4 +1,3 @@
-
 function exchange_money(budget, exchange_rate)
    
    budget / exchange_rate 

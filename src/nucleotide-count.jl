@@ -1,33 +1,33 @@
 function count_nucleotides(strand)
-    
-    counts = Dict('A' => 0, 'C' =>  0, 'G' => 0, 'T' => 0)
+
+    counts = Dict('A' => 0, 'C' => 0, 'G' => 0, 'T' => 0)
 
     for nucleotides in strand
 
-      if nucleotides == 'A'
+        if nucleotides == 'A'
 
-          counts['A'] += 1
+            counts['A'] += 1
 
-    elseif nucleotides == 'C'
+        elseif nucleotides == 'C'
 
-        counts['C'] += 1
+            counts['C'] += 1
 
-    elseif nucleotides == 'G' 
+        elseif nucleotides == 'G'
 
-        counts['G'] += 1
+            counts['G'] += 1
 
-    elseif nucleotides == 'T'
+        elseif nucleotides == 'T'
 
-        counts['T'] += 1
+            counts['T'] += 1
 
-    else
+        else
 
-        throw(DomainError(strand, "invalid nucleotide"))
-        
+            throw(DomainError(strand, "invalid nucleotide"))
+
+        end
+
     end
-    
-end
-    
+
     return counts
-    
+
 end

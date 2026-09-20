@@ -5,17 +5,17 @@ function sortquantity!(qty)
     sort!(qty, rev = true)
 
     return srtperm
-   
+
 end
 
 function sortcustomer(cust, srtperm)
 
     cust[srtperm]
-    
+
 end
 
 function production_schedule!(cust, qty)
-    
+
     srtperm = sortquantity!(qty)
 
     sorted_cust = sortcustomer(cust, srtperm)

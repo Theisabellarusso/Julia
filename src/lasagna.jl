@@ -1,17 +1,17 @@
 # Define the `expected_bake_time` constant`
- const expected_bake_time = 60
+const expected_bake_time = 60
 
 # Define the `preparation_time(layers)` function.
 function preparation_time(layers)
 
     layers * 2
-    
-end 
+
+end
 
 # Define the `remaining_time(time_in_oven)` function.
 function remaining_time(time_in_oven)
 
-   expected_bake_time - time_in_oven 
+    expected_bake_time - time_in_oven
 
 end
 

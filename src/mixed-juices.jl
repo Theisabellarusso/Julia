@@ -19,9 +19,9 @@ function time_to_mix_juice(juice)
     else
 
         2.5
-        
+
     end
-    
+
 end
 
 function wedges_from_lime(size)
@@ -39,7 +39,7 @@ function wedges_from_lime(size)
         10
 
     end
-    
+
 end
 
 function limes_to_cut(needed, limes)
@@ -55,7 +55,7 @@ function limes_to_cut(needed, limes)
     count = 0
 
     for lime in limes
-        
+
         count += 1
 
         total += wedges_from_lime(lime)

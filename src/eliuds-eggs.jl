@@ -7,7 +7,7 @@ function eggcount(number)
         if number % 2 == 1
 
             eggs += 1
-            
+
         end
 
         number = number ÷ 2

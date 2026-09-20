@@ -9,7 +9,7 @@ function transform(ch)
         ""
 
     elseif isuppercase(ch)
-        
+
         "-$(lowercase(ch))"
 
     elseif 'α' <= ch <= 'ω'
@@ -26,6 +26,6 @@ end
 
 function clean(str)
 
- join(map(transform, collect(str)))
-    
+    join(map(transform, collect(str)))
+
 end

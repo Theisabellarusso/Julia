@@ -13,7 +13,7 @@ end
 function flip_bits(value, mask)
 
     xor(value, mask)
-    
+
 end
 
 function clear_bits(value, mask)

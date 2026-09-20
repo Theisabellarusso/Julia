@@ -29,7 +29,7 @@ function categorize_dish(dish_name, dish_ingredients)
     elseif issubset(dish_ingredients, PALEO)
 
         dish_name * ": PALEO"
-        
+
     elseif issubset(dish_ingredients, KETO)
 
         dish_name * ": KETO"
@@ -48,20 +48,20 @@ function tag_special_ingredients(dish)
 
 end
 
-function compile_ingredients(dishes) 
+function compile_ingredients(dishes)
 
     reduce(union, dishes)
 
 end
-    
-function separate_appetizers(dishes, appetizers) 
+
+function separate_appetizers(dishes, appetizers)
 
     setdiff(dishes, appetizers)
 
 end
-    
-function singleton_ingredients(dishes, intersection)  
 
-    setdiff(reduce(union,dishes),intersection)
-    
+function singleton_ingredients(dishes, intersection)
+
+    setdiff(reduce(union, dishes), intersection)
+
 end

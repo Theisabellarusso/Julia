@@ -10,7 +10,7 @@ end
 
 function sortcustomer(cust, srtperm)
 
-    cust[srtperm]
+    return cust[srtperm]
 
 end
 

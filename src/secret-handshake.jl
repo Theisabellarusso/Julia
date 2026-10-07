@@ -8,8 +8,12 @@ function secret_handshake(code)
 
         if (code & (1 << i)) != 0
 
-            push!(handshake, actions[i+1])
+            push!(handshake, actions[i + 1])
 
         end
-        
+
     end
+
+    return handshake
+
+end

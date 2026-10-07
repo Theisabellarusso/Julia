@@ -9,21 +9,22 @@ function collatz_steps(n)
     end
 
     while n > 1
-        
-      if iseven(n)
 
-        n = n ÷ 2 
+        if iseven(n)
 
-       steps += 1
+            n = n ÷ 2
 
-      elseif isodd(n)
+            steps += 1
 
-        n = 3 * n + 1
+        elseif isodd(n)
 
-       steps += 1
+            n = 3 * n + 1
+        end
 
-   end
+        steps += 1
 
-   return steps
+    end
+
+    return steps
 
 end

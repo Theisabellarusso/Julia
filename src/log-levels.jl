@@ -1,12 +1,12 @@
 function message(msg)
 
-    strip(split(msg, ":")[2])
+    return strip(split(msg, ":")[2])
 
 end
 
 function log_level(msg)
 
-    lowercase(split(split(msg, "]")[1], "[")[2])
+    return lowercase(split(split(msg, "]")[1], "[")[2])
 
 end
 
@@ -16,6 +16,6 @@ function reformat(msg)
 
     msg = message(msg)
 
-    "$msg ($level)"
+    return "$msg ($level)"
 
 end

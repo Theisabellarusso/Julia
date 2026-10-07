@@ -1,6 +1,6 @@
 function transform(ch)
 
-    if ch == '-'
+    return if ch == '-'
 
         "_"
 
@@ -26,6 +26,6 @@ end
 
 function clean(str)
 
-    join(map(transform, collect(str)))
+    return join(map(transform, collect(str)))
 
 end

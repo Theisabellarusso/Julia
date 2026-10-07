@@ -1,6 +1,6 @@
 function clean_ingredients(dish_name, dish_ingredients)
 
-    (dish_name, Set(dish_ingredients))
+    return (dish_name, Set(dish_ingredients))
 
 end
 
@@ -18,7 +18,7 @@ end
 
 function categorize_dish(dish_name, dish_ingredients)
 
-    if issubset(dish_ingredients, VEGAN)
+    return if issubset(dish_ingredients, VEGAN)
 
         dish_name * ": VEGAN"
 
@@ -44,24 +44,24 @@ end
 
 function tag_special_ingredients(dish)
 
-    (dish[1], intersect(Set(dish[2]), SPECIAL_INGREDIENTS))
+    return (dish[1], intersect(Set(dish[2]), SPECIAL_INGREDIENTS))
 
 end
 
 function compile_ingredients(dishes)
 
-    reduce(union, dishes)
+    return reduce(union, dishes)
 
 end
 
 function separate_appetizers(dishes, appetizers)
 
-    setdiff(dishes, appetizers)
+    return setdiff(dishes, appetizers)
 
 end
 
 function singleton_ingredients(dishes, intersection)
 
-    setdiff(reduce(union, dishes), intersection)
+    return setdiff(reduce(union, dishes), intersection)
 
 end

@@ -1,6 +1,6 @@
 function create_inventory(items)
 
-    add_items(Dict(), items)
+    return add_items(Dict(), items)
 
 end
 
@@ -12,7 +12,7 @@ function add_items(inventory, items)
 
     end
 
-    inventory
+    return inventory
 
 end
 
@@ -28,17 +28,17 @@ function decrement_items(inventory, items)
 
     end
 
-    inventory
+    return inventory
 end
 
 function remove_item(inventory, item)
 
-    delete!(inventory, item)
+    return delete!(inventory, item)
 
 end
 
 function list_inventory(inventory)
 
-    sort([item for item in inventory if item.second > 0])
+    return sort([item for item in inventory if item.second > 0])
 
 end

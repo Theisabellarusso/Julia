@@ -187,7 +187,7 @@ include(pkgdir(Exercism, "src", "locomotive-engineer.jl"))
             enumerate(zip(input_data, output_data))
             @testset "Variation $variant" begin
                 @test extend_route_information(input[1]; input[2]...) ==
-                      expected
+                    expected
             end
         end
     end

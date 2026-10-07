@@ -1,6 +1,6 @@
 function print_name_badge(id, name, department)
-    
-    if ismissing(id) && isnothing(department)
+
+    return if ismissing(id) && isnothing(department)
 
         "$name - OWNER"
 
@@ -19,7 +19,6 @@ end
 
 function salaries_no_id(ids, salaries)
 
-    sum(salaries[ismissing.(ids)])
-
+    return sum(salaries[ismissing.(ids)])
 
 end

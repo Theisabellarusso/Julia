@@ -1,6 +1,6 @@
 function get_vector_of_wagons(args...)
 
-    collect(args)
+    return collect(args)
 
 end
 
@@ -12,18 +12,18 @@ function fix_vector_of_wagons(each_wagons_id, missing_wagons)
 
     middle = each_wagons_id[4:end]
 
-    vcat(locomotive, missing_wagons, middle, first_two)
+    return vcat(locomotive, missing_wagons, middle, first_two)
 
 end
 
 function add_missing_stops(route, stops...)
 
-    merge(route, Dict("stops" => [stop.second for stop in stops]))
+    return merge(route, Dict("stops" => [stop.second for stop in stops]))
 
 end
 
 function extend_route_information(route; more_route_information...)
 
-    merge(route, Dict(more_route_information))
+    return merge(route, Dict(more_route_information))
 
 end

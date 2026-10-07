@@ -1,6 +1,6 @@
 function success_rate(speed)
 
-    if speed == 0
+    return if speed == 0
 
         0
 
@@ -26,12 +26,12 @@ end
 
 function production_rate_per_hour(speed)
 
-    speed * 221 * success_rate(speed)
+    return speed * 221 * success_rate(speed)
 
 end
 
 function working_items_per_minute(speed)
 
-    floor(Int, production_rate_per_hour(speed) / 60)
+    return floor(Int, production_rate_per_hour(speed) / 60)
 
 end

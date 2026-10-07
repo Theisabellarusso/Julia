@@ -1,6 +1,6 @@
 function time_to_mix_juice(juice)
 
-    if juice == "Pure Strawberry Joy"
+    return if juice == "Pure Strawberry Joy"
 
         0.5
 
@@ -26,7 +26,7 @@ end
 
 function wedges_from_lime(size)
 
-    if size == "small"
+    return if size == "small"
 
         6
 
@@ -68,13 +68,13 @@ function limes_to_cut(needed, limes)
 
     end
 
-    count
+    return count
 
 end
 
 function order_times(orders)
 
-    [time_to_mix_juice(o) for o in orders]
+    return [time_to_mix_juice(o) for o in orders]
 
 end
 
@@ -94,6 +94,6 @@ function remaining_orders(time_left, orders)
 
     end
 
-    orders[i:end]
+    return orders[i:end]
 
 end

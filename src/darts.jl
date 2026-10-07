@@ -2,7 +2,7 @@ function score(x, y)
 
     radius = sqrt(x * x + y * y)
 
-    if radius <= 1
+    return if radius <= 1
 
         10
 
@@ -14,8 +14,11 @@ function score(x, y)
 
         1
 
-    else radius >= 10
+    else
+        radius >= 10
 
         0
+
+    end
 
 end

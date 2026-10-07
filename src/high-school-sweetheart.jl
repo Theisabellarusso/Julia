@@ -1,18 +1,18 @@
 function cleanupname(name)
 
-    strip(replace(name, "-" => " "))
+    return strip(replace(name, "-" => " "))
 
 end
 
 function firstletter(name)
 
-    string(first(cleanupname(name)))
+    return string(first(cleanupname(name)))
 
 end
 
 function initial(name)
 
-    uppercase(firstletter(name) * ".")
+    return uppercase(firstletter(name) * ".")
 
 end
 
@@ -22,6 +22,6 @@ function couple(name1, name2)
 
     si = initial(name2)
 
-    (string("❤ ", fi, "  +  ", si, " ❤"))
+    return (string("❤ ", fi, "  +  ", si, " ❤"))
 
 end
